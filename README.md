@@ -47,21 +47,21 @@ rsd能够将异构语言转换为前端语言（Sass,coffeeScript,Jade,前端模
 ```
 rsd release 
 ```
-2. js,css,html压缩
+2. javascript,css,html文件压缩
 ```
 rsd release --optimize  #简写 rsd release -o 
 ```
 
 3. 文件监听以及浏览器自动刷新
 ```
-rsd release #简写rsd release -wl  
+rsd release --watch --live #简写rsd release -wl  
 ```
 ###第四步：资源合并
 资源的合并需要在fis-conf.js中配置
 
-1. css,js合并
+1. css,javascript文件合并
 
-2. 图片合并
+2. 背景图片合并
 
 对于图片的合并，rsd已经内置[csssprites]，但是它只对合并后的css文件的图片处理，如果需要对某个单独的css文件
 处理需要单独在fis-conf.js中配置
@@ -114,7 +114,7 @@ rsd server start
 rsd release -m
 ```
 
-###发布代码
+###代码部署
 1.添加文件版本
 本地开发时可以不加，因为每次md5之后会生成一个新的文件
 ```
