@@ -118,13 +118,13 @@ fis.config.merge({
 
 ###本地预览
 
-*本地安装 Apache、Nginx、Lighttpd、IIS等服务器，可以发布在服务器的根目录下，如D:\wwwroot
+* 本地安装 Apache、Nginx、Lighttpd、IIS等服务器，可以发布在服务器的根目录下，如D:\wwwroot
 
 ```bash
 rsd release -md d:\wwwroot
 ```
 
-*rsd内置调试服务器
+* rsd内置调试服务器
 
 ```bash
 rsd server start
