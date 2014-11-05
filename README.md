@@ -61,6 +61,12 @@ rsd release -wl
 1. css,js合并
 
 2. 图片合并
+
+对于图片的合并，rsd已经内置[csssprites]，但是它只对合并后的css文件的图片处理，如果需要对某个单独的css文件
+处理需要单独在fis-conf.js中配置
+```
+rsd -p 
+```
 ```
 fis.config.merge({
 	settings : {
