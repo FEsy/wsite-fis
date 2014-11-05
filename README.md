@@ -121,7 +121,7 @@ rsd release -m
 ```
 
 ###代码部署
-1.添加文件版本
+1. 添加文件版本
 本地开发时可以不加，因为每次md5之后会生成一个新的文件
 ```
 rsd release --md5  #简写 rsd release -m
