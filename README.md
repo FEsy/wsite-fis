@@ -52,11 +52,13 @@ rsd release
 
 2. javascript,css,html文件压缩
 
+
 ```
 rsd release --optimize  #简写 rsd release -o 
 ```
 
 3.	文件监听以及浏览器自动刷新
+
 
 ```
 rsd release --watch --live #简写rsd release -wl  
