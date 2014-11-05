@@ -43,17 +43,18 @@ project
 ```
 ###第三步：资源压缩
 1. sass->css
-rsd支持多种前端编程语言（sass,coffee-script,jade,前端模板）通过命令直接转化为css,javascript,html
+rsd能够将异构语言转换为前端语言（Sass,coffeeScript,Jade,前端模板）通过命令直接转化为css,javascript,html
 ```
 rsd release 
 ```
 2. js,css,html压缩
 ```
-rsd release -o
+rsd release --optimize  #简写 rsd release -o 
 ```
+
 3. 文件监听以及浏览器自动刷新
 ```
-rsd release -wl
+rsd release #简写rsd release -wl  
 ```
 ###第四步：资源合并
 资源的合并需要在fis-conf.js中配置
@@ -104,6 +105,7 @@ fis.config.merge({
       }
  });
 ```
+
 ###本地预览
 ```
 rsd server start
@@ -113,6 +115,13 @@ rsd release -m
 ```
 
 ###发布代码
+1.添加文件版本
+本地开发时可以不加，因为每次md5之后会生成一个新的文件
+```
+rsd release --md5  #简写 rsd release -m
+
+```
+
 ```
 rsd release -m --dest ../output
 ```
