@@ -41,15 +41,12 @@ project
 	index.php	
 	fis-con.js  fis工具配置文件
 ```
-
-
-
-
-
-
 ###第三步：资源压缩
 1. sass->css
+rsd支持多种前端编程语言（sass,coffee-script,jade,前端模板）通过命令直接转化为css,javascript,html
+```
 
+```
 2. js,css,html压缩
 
 3. 文件监听以及浏览器自动刷新
