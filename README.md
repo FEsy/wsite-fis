@@ -62,16 +62,19 @@ rsd release --optimize  #简写 rsd release -o
 rsd release --watch --live #简写rsd release -wl  
 ```
 ###第四步：资源合并
+
 资源的合并需要在fis-conf.js中配置
 
 1. css,javascript文件合并
+对于css,js合并,需要在fis-conf.js中配置pack,默认只会进行文件打包，不会对页面中的静态资源引用进行替换
+我们可以通过引入后端静态资源管理来加载打包模块。不过也可以利用[fis-postpackager-simple](https://github.com/hefangshi/fis-postpackager-simple)插件，可以自动将页面中独立的资源引用替换为打包资源
 
 2. 背景图片合并
 
-对于图片的合并，rsd已经内置[csssprites]，但是它只对合并后的css文件的图片处理，如果需要对某个单独的css文件
+对于图片的合并，rsd已经内置[csssprites](https://github.com/fex-team/fis-spriter-csssprites)，但是它只对合并后的css文件的图片处理，如果需要对某个单独的css文件
 处理需要单独在fis-conf.js中配置
 ```
-rsd -p 
+rsd release --pack #简写rsd release -p 
 ```
 ```
 fis.config.merge({
@@ -116,7 +119,6 @@ fis.config.merge({
 ```
 rsd release -md d:\wwwroot
 ```
-
 2. rsd内置调试服务器
 ```
 rsd server start
