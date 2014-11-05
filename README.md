@@ -15,6 +15,8 @@ rsd -v
 ```
 ###第二步：创建项目，根据项目的实际情况创建不同的文件目录结构
 下面以php为主，前端为辅的微信官方目录为demo,下面的目录不是一成不变的，根据自己的需要增删改
+
+```
 project
 	|-assets
 		|-css
@@ -38,6 +40,10 @@ project
 		index-view.php	
 	index.php	
 	fis-con.js  fis工具配置文件
+```
+
+
+
 
 
 
