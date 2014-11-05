@@ -61,7 +61,43 @@ rsd release -wl
 1. css,js合并
 
 2. 图片合并
-
+```
+fis.config.merge({
+	settings : {
+			postpackager : {
+				simple : {
+					autoReflow: true,
+					//autoCombine: true
+				}
+			},
+			spriter: {
+				csssprites: {
+					margin: 20
+				}
+			}
+		},
+    roadmap : {
+	     	path: [
+	   			//{
+ 				// 	reg: /\/assets\/css\/.*\.css$/i,
+ 				//     useSprite: true,
+ 				//},
+ 				{
+ 				    reg: /\/assets\/css\/(.*\.png)$/i,
+ 				    release: '/assets/images/$1',
+				}
+     	]
+     },
+	 modules: {
+	    	postpackager : 'simple',
+	    	spriter : 'csssprites'
+	  },
+     pack : {
+      	'assets/js/lib.js': ['/assets/js/handlebars.js','/assets/js/jquery-1.8.2.js'],
+      	'assets/css/lib.css' : ['/assets/css/**.css','/assets/css/**.scss'] 
+      }
+ });
+```
 ###本地预览
 ```
 rsd server start
