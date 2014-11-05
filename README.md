@@ -129,6 +129,7 @@ rsd内置调试服务器
 ```bash
 rsd server start
 ```
+release命令如果省略 --dest <path>参数，就表示把代码发布到内置服务器的根目录下,如果不省略会是什么情况，还待搞定
 ```bash
 rsd release -m
 ```
@@ -139,8 +140,8 @@ rsd release -m
 本地开发时可以不加，因为每次md5之后会生成一个新的文件
 ```
 rsd release --md5  #简写 rsd release -m
-
 ```
+
 ```
 rsd release -m --dest ../output
 ```
