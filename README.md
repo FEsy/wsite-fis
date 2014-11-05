@@ -42,24 +42,24 @@ project
 	fis-con.js  fis工具配置文件
 ```
 ###第三步：资源压缩
-1. sass->css
+1.	sass->css
 rsd能够将异构语言转换为前端语言（Sass,coffeeScript,Jade,前端模板）通过命令直接转化为css,javascript,html
 ```
 rsd release 
 ```
-2. javascript,css,html文件压缩
+2.	javascript,css,html文件压缩
 ```
 rsd release --optimize  #简写 rsd release -o 
 ```
 
-3. 文件监听以及浏览器自动刷新
+3.	文件监听以及浏览器自动刷新
 ```
 rsd release --watch --live #简写rsd release -wl  
 ```
 ###第四步：资源合并
 资源的合并需要在fis-conf.js中配置
 
-1. css,javascript文件合并
+1.css,javascript文件合并
 
 2. 背景图片合并
 
