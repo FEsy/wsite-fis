@@ -123,21 +123,22 @@ fis.config.merge({
 
 1. 本地安装 Apache、Nginx、Lighttpd、IIS等服务器，可以发布在服务器的根目录下，如D:\wwwroot
 
-```
+```bash
 rsd release -md d:\wwwroot
 ```
 
 2. rsd内置调试服务器
 
-```
+```bash
 rsd server start
 ```
-```
+```bash
 rsd release -m
 ```
 
 ###代码部署
-1. 添加文件版本
+
+添加文件版本
 本地开发时可以不加，因为每次md5之后会生成一个新的文件
 ```
 rsd release --md5  #简写 rsd release -m
