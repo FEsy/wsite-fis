@@ -45,20 +45,34 @@ project
 1. sass->css
 rsd支持多种前端编程语言（sass,coffee-script,jade,前端模板）通过命令直接转化为css,javascript,html
 ```
-
+rsd release 
 ```
 2. js,css,html压缩
-
+```
+rsd release -o
+```
 3. 文件监听以及浏览器自动刷新
-
-
+```
+rsd release -wl
+```
 ###第四步：资源合并
+资源的合并需要在fis-conf.js中配置
+
 1. css,js合并
 
 2. 图片合并
 
 ###本地预览
+```
+rsd server start
+```
+```
+rsd release -m
+```
 
 ###发布代码
+```
+rsd release -m --dest ../output
+```
 
 
