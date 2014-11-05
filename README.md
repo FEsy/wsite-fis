@@ -43,19 +43,19 @@ project
 ```
 ###第三步：资源压缩
 
-*sass->css
+sass->css,coffeeScript->javascript,jade->html
 
 rsd能够将异构语言转换为前端语言（Sass,coffeeScript,Jade,前端模板）通过命令直接转化为css,javascript,html
 ```
 rsd release 
 ```
-*javascript,css,html文件压缩
+javascript,css,html文件压缩
 
 ```
 rsd release --optimize  #简写 rsd release -o 
 ```
 
-*文件监听以及浏览器自动刷新
+文件监听以及浏览器自动刷新
 
 ```
 rsd release --watch --live #简写rsd release -wl  
@@ -118,13 +118,13 @@ fis.config.merge({
 
 ###本地预览
 
-* 本地安装 Apache、Nginx、Lighttpd、IIS等服务器，可以发布在服务器的根目录下，如D:\wwwroot
+本地安装 Apache、Nginx、Lighttpd、IIS等服务器，可以发布在服务器的根目录下，如D:\wwwroot
 
 ```bash
 rsd release -md d:\wwwroot
 ```
 
-* rsd内置调试服务器
+rsd内置调试服务器
 
 ```bash
 rsd server start
