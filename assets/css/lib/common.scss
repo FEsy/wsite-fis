@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@mixin display-flex{
+	display:-webkit-flex;
+	display: flex;
+	display: -ms-flex;
+	display: -moz-flex;
+}
+.ul{
+	@include display-flex;
+	margin: 10px 0px;
+}
