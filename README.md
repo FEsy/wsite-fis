@@ -14,7 +14,7 @@ npm install -g rsd
 rsd -v
 ```
 rsd更多命令可以查看帮助
-```
+```bash
 rsd release --help #简写 rsd release -h;
 ```
 
@@ -53,7 +53,14 @@ sass->css,coffeeScript->javascript,jade->html
 rsd能够将异构语言转换为前端语言（Sass,coffeeScript,Jade,前端模板）通过命令直接转化为css,javascript,html
 首先指定产出目录:
 ```
-rsd release --dest path/to/output #简写 rsd release -d path/to/output
+rsd release
+如果你本地没有cgi环境，请在执行fis release命令时增加额外的
+```bash
+rsd release  --dest path/to/apache/htdocs
+#简写 rsd release -d path/to/output
+```
+
+
 ```
 javascript,css,html文件压缩
 
