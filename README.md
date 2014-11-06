@@ -10,6 +10,7 @@ rsd是基于fis而包装的简单命令行工具，而fis的安装需要[nodejs]
 npm install -g rsd
 ```
 查看是否安装成功：显示fis标志则已安装成功
+
 ```base 
 rsd -v
 ```
@@ -54,25 +55,27 @@ rsd能够将异构语言转换为前端语言（Sass,coffeeScript,Jade,前端模
 首先指定产出目录:
 ```
 rsd release
+````
+
 如果你本地没有cgi环境，请在执行fis release命令时增加额外的
+
 ```bash
 rsd release  --dest path/to/apache/htdocs
 #简写 rsd release -d path/to/output
 ```
 
-
-```
 javascript,css,html文件压缩
 
-```
+```bash
 rsd release --optimize  #简写 rsd release -o 
 ```
 
 文件监听以及浏览器自动刷新
 
-```
+```bash
 rsd release --watch --live #简写rsd release -wl  
 ```
+
 ###第四步：资源合并
 
 资源的合并需要在fis-conf.js中配置
