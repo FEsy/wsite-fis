@@ -13,6 +13,11 @@ npm install -g rsd
 ```base 
 rsd -v
 ```
+rsd更多命令可以查看帮助
+```
+rsd release --help #简写 rsd release -h;
+```
+
 ###第二步：创建项目，根据项目的实际情况创建不同的文件目录结构
 下面以php为主，前端为辅的微信官方目录为demo,下面的目录不是一成不变的，根据自己的需要增删改
 
@@ -46,8 +51,9 @@ project
 sass->css,coffeeScript->javascript,jade->html
 
 rsd能够将异构语言转换为前端语言（Sass,coffeeScript,Jade,前端模板）通过命令直接转化为css,javascript,html
+首先指定产出目录:
 ```
-rsd release 
+rsd release --dest path/to/output #简写 rsd release -d path/to/output
 ```
 javascript,css,html文件压缩
 
